@@ -6,16 +6,191 @@
     <title>new project</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@700&family=Open+Sans:wght@300&family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header"></header>
-    <section class="main"></section>
-    <footer class="footer"></footer>
+    <header class="header" id="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <div class="header__inner-logo">
+                    <img src="css/img/shape.svg" alt="" class="">
+                </div>
 
+                <ul class="header__inner-menu" id="header__text">
+                    <li class="header__inner-menu-item"><a href="#" class="header__inner-menu-item-link">HOME</a></li>
+                    <li class="header__inner-menu-item"><a href="#" class="header__inner-menu-item-link">ABOUT US</a></li>
+                    <li class="header__inner-menu-item"><a href="#" class="header__inner-menu-item-link">PORTFOLIO</a></li>
+                    <li class="header__inner-menu-item"><a href="#" class="header__inner-menu-item-link">OUR TEAM</a></li>
+                    <li class="header__inner-menu-item"><a href="#" class="header__inner-menu-item-link">BLOG</a></li>
+                    <li class="header__inner-menu-item"><a href="#" class="header__inner-menu-item-link">CONTACT</a></li>
+                </ul>
+            </div>
 
-    <!-- <script src="js/script1.js"></script>
+        </div>
+    </header>
+
+    <section class="bg">
+        <div class="bg__container">
+            <div class="bg__inner">
+                <div class="bg__inner-text">
+                    <p class="bg__inner-text-big">OXYGEN</p>
+                    <p class="bg__inner-text-small">STARTER UI KIT</p>
+                </div>
+            
+                <button class="bg__inner-toggle" id="toggle" onclick=toggleFunc()></button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__inner-left">
+                    <p class="about__inner-left-text">About Us</p>
+                </div>
+                
+                <div class="about__inner-right">
+                    <p class="about__inner-right-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium commodi totam culpa, dolorum asperiores iusto quidem, nesciunt hic eaque blanditiis enim, id maiores nam nobis dignissimos aliquam ad minus nisi. In, fuga blanditiis non cum cupiditate dolore, accusantium odio doloremque quibusdam dignissimos nemo sed nisi, similique, mollitia et! Autem laborum sint tenetur, earum facere veniam?<br>
+                        <br>
+                        Sunt fugiat veniam consectetur soluta quia ex tempora quaerat, perferendis! Itaque a praesentium saepe ex distinctio aliquid quis laborum sit, porro dolor odio, iste eos laboriosam dolorum maiores harum reiciendis vitae doloribus illum voluptatibus nobis maxime assumenda ipsam tempora fugiat. Perspiciatis quibusdam hic cum tempore.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="expertise">
+        <div class="container">
+            <div class="expertise__inner">
+                <div class="expertise__inner-top">
+                    <div class="expertise__inner-top-text">Our Expertise</div>
+                </div>
+                
+                <div class="expertise__inner-mid">
+                    <div class="expertise__inner-mid-progress">
+                        <div class="expertise__inner-mid-progress-line" id="progress1">BRANDING</div>
+                        <div class="expertise__inner-mid-progress-line" id="progress2">DESIGN</div>
+                        <div class="expertise__inner-mid-progress-line" id="progress3">DEVELOPMENT</div>
+                    </div>
+
+                    <div class="expertise__inner-mid-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium commodi totam culpa, dolorum asperiores iusto quidem, nesciunt hic eaque blanditiis enim, id maiores nam nobis dignissimos aliquam ad minus nisi.<br>
+                        <br>
+                        Autem laborum sint tenetur, earum facere veniam? Sunt fugiat veniam consectetur soluta quia ex tempora quaerat, perferendis! Itaque a praesentium saepe ex distinctio aliquid quis
+                    </div>
+                </div>
+
+                <div class="expertise__inner-bottom">
+                    <div class="expertise__inner-bottom-block">
+                        <div class="expertise__inner-bottom-left">
+                            <img src="css/img/vector1.svg" alt="" srcset="">
+                        </div>
+    
+                        <div class="expertise__inner-bottom-right">
+                            <div class="expertise__inner-bottom-right-big">GRAPHIC DESIGN</div>
+                            <div class="expertise__inner-bottom-right-small">Lorem Ipsum Proin gravida nibh vel  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</div>
+                        </div>
+                    </div>
+
+                    <div class="expertise__inner-bottom-block">
+                        <div class="expertise__inner-bottom-left">
+                            <img src="css/img/vector2.svg" alt="" srcset="">
+                        </div>
+    
+                        <div class="expertise__inner-bottom-right">
+                            <div class="expertise__inner-bottom-right-big">GRAPHIC DESIGN</div>
+                            <div class="expertise__inner-bottom-right-small">Lorem Ipsum Proin gravida nibh vel  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</div>
+                        </div>
+                    </div>
+
+                    <div class="expertise__inner-bottom-block">
+                        <div class="expertise__inner-bottom-left">
+                            <img src="css/img/vector3.svg" alt="" srcset="">
+                        </div>
+    
+                        <div class="expertise__inner-bottom-right">
+                            <div class="expertise__inner-bottom-right-big">GRAPHIC DESIGN</div>
+                            <div class="expertise__inner-bottom-right-small">Lorem Ipsum Proin gravida nibh vel  velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vision">
+        <div class="container">
+            <div class="vision__inner">
+                <div class="vision__inner-left"></div>
+                <div class="vision__inner-right">
+                    <div class="vision__inner-right-top">Let’s make magic.</div>
+                    <div class="vision__inner-right-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero veniam odio itaque. Molestiae aut dicta accusantium quod, modi ad alias enim dolor delectus iusto! Inventore tempora labore nobis doloribus optio nulla sit corrupti nostrum, tempore debitis pariatur minus maiores velit, autem ex eum distinctio error fugit. Itaque voluptatum quam veritatis fuga impedit nulla dolor.<br>
+                        <br>
+                        Nam dignissimos, ratione odit doloribus cum porro, aut. Ipsum nisi odio voluptatum, et, reprehenderit accusamus, est provident debitis dicta ullam esse assumenda, odit? Alias architecto enim pariatur libero ipsam mollitia maiores minus quibusdam numquam perspiciatis eveniet sit dolores eligendi inventore, ea voluptatum debitis iure, repellendus iste culpa! Voluptatibus quam ipsum nisi odit deserunt qui, consectetur ducimus, quis officia quaerat sapiente dolores, ad libero! Tenetur provident, omnis.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio__inner">
+                <div class="portfolio__inner-top">
+                    <div class="portfolio__inner-top-left">Portfolio</div>
+                    <div class="portfolio__inner-top-right">
+                        <ul class="portfolio__inner-top-right-menu">
+                            <li class="portfolio__inner-top-right-menu-item">ALL</li>
+                            <li class="portfolio__inner-top-right-menu-item">BRANDING</li>
+                            <li class="portfolio__inner-top-right-menu-item">BRANDING</li>
+                            <li class="portfolio__inner-top-right-menu-item">PHOTOGRAPHY</li>
+                            <li class="portfolio__inner-top-right-menu-item">ILLUSTRATION</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="portfolio__inner-bottom">
+                    <div class="portfolio__inner-bottom-grid">
+                        <div class="portfolio__inner-bottom-grid-item1"></div>
+                        <div class="portfolio__inner-bottom-grid-item2"></div>
+                        <div class="portfolio__inner-bottom-grid-item3"></div>
+                        <div class="portfolio__inner-bottom-grid-item4"></div>
+                        <div class="portfolio__inner-bottom-grid-item5"></div>
+                        <div class="portfolio__inner-bottom-grid-item6"></div>
+                        <div class="portfolio__inner-bottom-grid-item7"></div>
+                        <div class="portfolio__inner-bottom-grid-item8"></div>
+                        <div class="portfolio__inner-bottom-grid-item9"></div>
+                    </div>
+                    <div class="portfolio__inner-bottom-unseen-grid" id="seen">
+                        <div class="portfolio__inner-bottom-unseen-grid-item1"></div>
+                        <div class="portfolio__inner-bottom-unseen-grid-item2"></div>
+                        <div class="portfolio__inner-bottom-unseen-grid-item3"></div>
+                        <div class="portfolio__inner-bottom-unseen-grid-item4"></div>
+                    </div>
+
+                    <button class="portfolio__inner-bottom-more" id="seenbutton" onclick=myFunction()>SHOW MORE PROJECTS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__inner">
+                <div class="testimonials__inner-text">
+                    <div class="testimonials__inner-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="testimonials__inner-bottom">Gilbert Hammond</div>
+                </div>
+                <div class="testimonials__inner-video"></div>
+            </div>
+        </div>
+    </section>
+    <script src="js/progressbar.js"></script>
+    <script src="js/script1.js"></script>
     <script src="js/script2.js"></script>
-    <script src="js/script3.js"></script> -->
+    <script src="js/script3.js"></script>
+    <script src="js/script4.js"></script>
+    <script src="js/script5.js"></script>
 </body>
 </html>
