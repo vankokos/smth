@@ -3,6 +3,8 @@ function toggleFunc () {
     var elementsbgThree = document.querySelectorAll(".blacker")
     var text = document.querySelectorAll(".blacktext")
     var elementsbgTwo = document.querySelectorAll(".grey")
+    // var toggle = document.querySelector("#toggle")
+
     for(let i = 0; i < elementsbg.length; i++) {
         elementsbg[i].classList.toggle("black")
     }
