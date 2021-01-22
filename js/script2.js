@@ -2,7 +2,7 @@ var barTwo = new ProgressBar.Line(progress2, {
     strokeWidth: 4,
     easing: 'easeInOut',
     duration: 1400,
-    color: '#000000',
+    color: '#00B2A0',
     trailColor: '#F0F0F0',
     trailWidth: 5,
     svgStyle: {width: '370px', height: '3px'},
@@ -10,7 +10,7 @@ var barTwo = new ProgressBar.Line(progress2, {
       style: {
         // Text color.
         // Default: same as stroke color (options.color)
-        color: '#1D1D1D',
+        color: '#9E9E9E',
         position: 'relative',
         right: '0',
         left: '300px',

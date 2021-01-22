@@ -229,7 +229,6 @@ body {
 }
 
 .expertise__inner-mid-progress {
-  background: white;
   padding: 10px;
   border-radius: 3px;
 }
@@ -244,7 +243,7 @@ body {
   font-size: 11px;
   line-height: 20px;
   letter-spacing: 1px;
-  color: #1D1D1D;
+  color: #9E9E9E;
 }
 
 .expertise__inner-mid-text {
@@ -400,7 +399,6 @@ body {
 }
 
 .portfolio__inner-bottom-grid div {
-  background-color: #EDEDED;
   display: flex;
   transition: 0.4s;
 }
@@ -460,7 +458,6 @@ body {
 }
 
 .portfolio__inner-bottom-unseen-grid div {
-  background-color: #EDEDED;
   display: flex;
   transition: 0.4s;
   height: 395px;
@@ -487,7 +484,6 @@ body {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 1.2px;
-  color: #242121;
   transition: 0.3s;
   border: 1px solid #242121;
   cursor: pointer;
@@ -707,7 +703,6 @@ body {
   text-align: center;
   width: 370px;
   height: 583px;
-  background: #FFFFFF;
   padding: 25px;
 }
 
@@ -718,7 +713,6 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-  color: #242121;
 }
 
 .price__inner-block h1 {
@@ -730,7 +724,6 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: #242121;
 }
 
 .price__inner-block h1::before {
@@ -751,7 +744,6 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  color: #242121;
   margin-bottom: 30px;
 }
 
@@ -761,7 +753,6 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  color: #242121;
   margin-bottom: 80px;
 }
 
@@ -772,9 +763,9 @@ body {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 1.2px;
-  color: #242121;
   text-decoration: none;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .price__inner-block a:hover {
@@ -785,6 +776,7 @@ body {
 
 .contact {
   padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .contact__inner {
@@ -810,13 +802,13 @@ body {
 .contact__inner-left-inputs {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
 }
 
 .contact__inner-left-inputs input {
   border: none;
   outline: none;
-  border-bottom: 1px solid #373A39;
+  margin-bottom: 20px;
+  border: 1px solid #242121;
   height: 40px;
 }
 
@@ -843,6 +835,7 @@ body {
 .contact__inner-right #map {
   height: 896px;
   width: 635px;
+  border: 3px solid black;
 }
 
 .footer {
