@@ -4,7 +4,6 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
-  color: #373A39;
 }
 
 .montserrat, .bg__inner-text-big, .bg__inner-text-small, .about__inner-left-text, .expertise__inner-top-text {
@@ -29,13 +28,41 @@
   box-sizing: border-box;
 }
 
+.white {
+  background: white;
+}
+
+.black {
+  background: #373A39;
+}
+
+.blacker {
+  background: #373A39;
+}
+
+.blackest {
+  background: #2c2e2d;
+}
+
+.blacktext {
+  color: #373A39;
+}
+
+.whitetext {
+  color: white;
+}
+
+.grey {
+  background: #F6F8FA;
+}
+
+.blacktwo {
+  background: #2c2e2d;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
-}
-
-.header {
-  background: white;
 }
 
 .header__container {
@@ -63,7 +90,6 @@
 
 .header__inner-menu a {
   text-decoration: none;
-  display: inline-block;
   padding: 15px 20px;
   position: relative;
 }
@@ -111,7 +137,6 @@
 
 .bg__inner-text-big {
   margin-bottom: 17px;
-  color: white;
   font-size: 100px;
   line-height: 122px;
 }
@@ -143,7 +168,6 @@
 }
 
 .about {
-  background: #F6F8FA;
   padding-top: 140px;
   padding-bottom: 140px;
 }
@@ -156,7 +180,6 @@
 .about__inner-left-text {
   font-size: 48px;
   line-height: 75px;
-  color: #242121;
   letter-spacing: -1.65px;
   position: relative;
 }
@@ -188,7 +211,6 @@
   font-size: 60px;
   line-height: 75px;
   letter-spacing: -1.65px;
-  color: #242121;
   position: relative;
 }
 
@@ -200,6 +222,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.expertise__inner-mid-progress {
+  background: white;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .expertise__inner-mid-progress-line {
@@ -221,7 +249,6 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  color: #373A39;
   width: 770px;
 }
 
@@ -245,7 +272,6 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 4.2875px;
-  color: #333333;
   margin-bottom: 14px;
 }
 
@@ -257,10 +283,6 @@
   line-height: 24px;
   color: #777777;
   width: 285px;
-}
-
-.vision {
-  background-color: #F6F8FA;
 }
 
 .vision__inner {
@@ -284,7 +306,6 @@
   display: flex;
   align-items: flex-end;
   letter-spacing: -1.65px;
-  color: #242121;
   position: relative;
 }
 
@@ -293,7 +314,6 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  color: #373A39;
 }
 
 .vision__inner-left {
@@ -316,7 +336,6 @@
   display: flex;
   align-items: flex-end;
   letter-spacing: -1.65px;
-  color: #242121;
   position: relative;
   width: 7%;
   margin-bottom: 15px;
@@ -503,7 +522,6 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 36px;
-  color: #242121;
   width: 650px;
   margin-bottom: 50px;
 }
@@ -517,17 +535,16 @@
   color: #9E9E9E;
 }
 
-.testimonials__inner-video {
-  background-image: url(img/video.svg);
-  background-size: cover 100%;
+.testimonials__inner-video-inner {
+  background-image: url(img/video1.svg);
   width: 100%;
   height: 324px;
   position: relative;
-  z-index: -100;
+  z-index: 1000;
   cursor: pointer;
 }
 
-.testimonials__inner-video::after {
+.testimonials__inner-video-inner::after {
   content: "";
   position: absolute;
   background-image: url(img/arrow.svg);
@@ -537,7 +554,7 @@
   top: 40%;
 }
 
-.testimonials__inner-video::after:hover {
+.testimonials__inner-video-inner::after:hover {
   transform: scale(1.7);
 }
 
@@ -559,7 +576,6 @@
   font-weight: bold;
   font-size: 60px;
   line-height: 73px;
-  color: #242121;
 }
 
 .testimonials__inner-numbers-text h1 {
@@ -572,7 +588,6 @@
 }
 
 .featured {
-  background: #F6F8FA;
   padding-top: 305px;
   padding-bottom: 305px;
 }
@@ -588,7 +603,6 @@
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  color: #242121;
 }
 
 .featured__inner h1 {
@@ -598,7 +612,6 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  color: #777777;
 }
 
 .team {
@@ -613,7 +626,6 @@
   font-size: 60px;
   line-height: 75px;
   letter-spacing: -1.65px;
-  color: #242121;
   position: relative;
   margin-bottom: 120px;
 }
@@ -651,7 +663,6 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  color: #333333;
 }
 
 .team__inner-faces-block h1 {
@@ -664,7 +675,6 @@
 }
 
 .price {
-  background: #F6F8FA;
   padding-top: 70px;
   padding-bottom: 160px;
 }
@@ -676,7 +686,6 @@
   font-size: 60px;
   line-height: 75px;
   letter-spacing: -1.65px;
-  color: #242121;
   position: relative;
   margin-bottom: 70px;
 }
@@ -786,7 +795,6 @@
   font-size: 60px;
   line-height: 75px;
   letter-spacing: -1.65px;
-  color: #242121;
   position: relative;
   margin-bottom: 105px;
 }
@@ -834,7 +842,6 @@
 }
 
 .footer {
-  background: #373A39;
   padding-top: 110px;
   padding-bottom: 100px;
 }
@@ -891,7 +898,7 @@
 }
 
 .bottom {
-  background: #2A2C2B;
+  background: #1b1d1c;
   padding-top: 43px;
   padding-bottom: 41px;
 }
