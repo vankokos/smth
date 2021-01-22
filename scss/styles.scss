@@ -1,6 +1,8 @@
 @import "vars";
 @import "extends";
-
+body {
+    overflow-x:hidden;
+}
 * {
     box-sizing: border-box;
 }
