@@ -13,7 +13,7 @@
   font-weight: bold;
 }
 
-.yellowstripe, .about__inner-left-text::before, .expertise__inner-top-text::before, .vision__inner-right-top::before, .portfolio__inner-top-left {
+.yellowstripe, .about__inner-left-text::before, .expertise__inner-top-text::before, .vision__inner-right-top::before, .portfolio__inner-top-left, .team__inner h2::before, .price__inner-text:before, .contact__inner-left p::before, .footer__inner-logo::before {
   content: "";
   background-color: #FCBB08;
   width: 100px;
@@ -475,5 +475,434 @@
   background-color: #242121;
   transition: 0.4s;
   border: 1px solid white;
+}
+
+.testimonials {
+  padding-top: 130px;
+  padding-bottom: 160px;
+}
+
+.testimonials__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.testimonials__inner-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 130px;
+}
+
+.testimonials__inner-text-top {
+  font-family: Merriweather;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 36px;
+  color: #242121;
+  width: 650px;
+  margin-bottom: 50px;
+}
+
+.testimonials__inner-text-bottom {
+  font-family: Merriweather;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 32px;
+  color: #9E9E9E;
+}
+
+.testimonials__inner-video {
+  background-image: url(img/video.svg);
+  background-size: cover 100%;
+  width: 100%;
+  height: 324px;
+  position: relative;
+  z-index: -100;
+  cursor: pointer;
+}
+
+.testimonials__inner-video::after {
+  content: "";
+  position: absolute;
+  background-image: url(img/arrow.svg);
+  height: 65px;
+  width: 55px;
+  right: 48%;
+  top: 40%;
+}
+
+.testimonials__inner-video::after:hover {
+  transform: scale(1.7);
+}
+
+.testimonials__inner-numbers {
+  display: flex;
+  padding-top: 160px;
+  padding-bottom: 50px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.testimonials__inner-numbers-text {
+  text-align: center;
+}
+
+.testimonials__inner-numbers-text p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 73px;
+  color: #242121;
+}
+
+.testimonials__inner-numbers-text h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #00B2A0;
+}
+
+.featured {
+  background: #F6F8FA;
+  padding-top: 305px;
+  padding-bottom: 305px;
+}
+
+.featured__inner {
+  padding-left: 50px;
+}
+
+.featured__inner p {
+  width: 704px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #242121;
+}
+
+.featured__inner h1 {
+  width: 559px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+}
+
+.team {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.team__inner h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: -1.65px;
+  color: #242121;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.team__inner h2::before {
+  width: 10%;
+}
+
+.team__inner-faces {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__inner-faces-block {
+  text-align: center;
+}
+
+.team__inner-faces-block img {
+  height: 400px;
+  width: 330px;
+  margin-bottom: 20px;
+  transform: scale(1);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.team__inner-faces-block img:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.team__inner-faces-block p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+.team__inner-faces-block h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #C2C2C2;
+}
+
+.price {
+  background: #F6F8FA;
+  padding-top: 70px;
+  padding-bottom: 160px;
+}
+
+.price__inner-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: -1.65px;
+  color: #242121;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.price__inner-text:before {
+  width: 10%;
+}
+
+.price__inner-blocks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.price__inner-block {
+  text-align: center;
+  width: 370px;
+  height: 583px;
+  background: #FFFFFF;
+  padding: 25px;
+}
+
+.price__inner-block-top {
+  text-align: start;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242121;
+}
+
+.price__inner-block h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 109px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #242121;
+}
+
+.price__inner-block h1::before {
+  content: "$";
+  font-size: 40px;
+  display: flex;
+}
+
+.price__inner-block h1::after {
+  content: "/ mo";
+  font-size: 20px;
+  display: flex;
+}
+
+.price__inner-block p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242121;
+  margin-bottom: 30px;
+}
+
+.price__inner-block h4 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242121;
+  margin-bottom: 80px;
+}
+
+.price__inner-block a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1.2px;
+  color: #242121;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.price__inner-block a:hover {
+  color: black;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.contact {
+  padding-top: 30px;
+}
+
+.contact__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__inner-left p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: -1.65px;
+  color: #242121;
+  position: relative;
+  margin-bottom: 105px;
+}
+
+.contact__inner-left p::before {
+  width: 50%;
+}
+
+.contact__inner-left-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.contact__inner-left-inputs input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #373A39;
+  height: 40px;
+}
+
+.contact__inner-left-inputs input:last-child {
+  height: 156px;
+}
+
+.contact__inner-left button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #242121;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  padding: 15px;
+}
+
+.contact__inner-right #map {
+  height: 896px;
+  width: 635px;
+}
+
+.footer {
+  background: #373A39;
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+
+.footer__inner-logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 85px;
+}
+
+.footer__inner-logo::before {
+  left: 45%;
+  width: 10%;
+  top: 50px;
+  height: 2px;
+}
+
+.footer__inner-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__inner-menu-list {
+  display: flex;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.footer__inner-menu-list a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 4px;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+
+.footer__inner-info {
+  text-align: center;
+}
+
+.footer__inner-info p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #A8A8A8;
+}
+
+.bottom {
+  background: #2A2C2B;
+  padding-top: 43px;
+  padding-bottom: 41px;
+}
+
+.bottom__inner {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #CCCCCC;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -3,8 +3,8 @@ function toggleFunc () {
     var toggle = document.querySelector('#toggle')
     var headerText = document.querySelectorAll('.header__inner-menu-item-link')
     var bgText = document.querySelector('.bg__inner-text-big')
-    // var about = document.querySelector('.about')
-    // var aboutInner = document.querySelectorAll('.about__inner')
+    var about = document.querySelector('.about')
+    var aboutInner = document.querySelectorAll('.about__inner')
 
     if (header.style.background == "white" || header.style.background =="") {
         header.style.background = "#373A39";

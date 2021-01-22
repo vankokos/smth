@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@700&family=Open+Sans:wght@300&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
 </head>
 <body>
     <header class="header" id="header">
@@ -179,18 +188,192 @@
         <div class="container">
             <div class="testimonials__inner">
                 <div class="testimonials__inner-text">
-                    <div class="testimonials__inner-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    <div class="testimonials__inner-bottom">Gilbert Hammond</div>
+                    <div class="testimonials__inner-text-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="testimonials__inner-text-bottom">Gilbert Hammond</div>
                 </div>
-                <div class="testimonials__inner-video"></div>
+                <div class="testimonials__inner-video" href="https://www.youtube.com/"></div>
+                <div class="testimonials__inner-numbers">
+                    <div class="testimonials__inner-numbers-text">
+                        <p>305</p>
+                        <h1>Web Designs</h1>
+                    </div>
+                    <div class="testimonials__inner-numbers-text">
+                        <p>220</p>
+                        <h1>Logo Designs</h1>
+                    </div>
+                    <div class="testimonials__inner-numbers-text">
+                        <p>52</p>
+                        <h1>Print Designs</h1>
+                    </div>
+                    <div class="testimonials__inner-numbers-text">
+                        <p>88</p>
+                        <h1>Print Designs</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="featured">
+        <div class="container">
+            <div class="featured__inner">
+                <div class="featured__inner-block" id="slide">
+                    <p>Then they show that show to the people who make shows</p>
+                    <h1>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother’s.</h1>
+                </div>
+                <div class="featured__inner-block" id="slide">
+                    <p>Then they show that show to the people who make shows</p>
+                    <h1>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother’s.</h1>
+                </div>
+                <div class="featured__inner-block" id="slide">
+                    <p>Then they show that show to the people who make shows</p>
+                    <h1>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother’s.</h1>
+                </div>
+                <div class="featured__inner-block" id="slide">
+                    <p>Then they show that show to the people who make shows</p>
+                    <h1>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother’s.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <div class="team__inner">
+                <h2>Our Team</h2>
+
+                <div class="team__inner-faces">
+                    <div class="team__inner-faces-block">
+                        <img src="css/img/face1.svg" alt="" srcset="">
+                        <p>BERNARD SPARKS</p>
+                        <h1>CEO</h1>
+                    </div>
+                    <div class="team__inner-faces-block">
+                        <img src="css/img/face2.svg" alt="" srcset="">
+                        <p>MINERVA BENSON</p>
+                        <h1>Co-Founder</h1>
+                    </div>
+                    <div class="team__inner-faces-block">
+                        <img src="css/img/face3.svg" alt="" srcset="">
+                        <p>JARED OLSON</p>
+                        <h1>Sales</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price">
+        <div class="container">
+            <div class="price__inner">
+                
+                <div class="price__inner-text">Pricing Plans</div>
+                <div class="price__inner-blocks">
+                    <div class="price__inner-block">
+                        <div class="price__inner-block-top">
+                            <p>Basic</p>
+                        </div>
+                        
+                        <h1>29</h1>
+                        <p>1 Logo Design</p>
+                        <p>1 Website Design</p>
+                        <p>1 Domain Free</p>
+                        <p>3 Month License</p>
+                        <h4>1 GB Storage</h4>
+                        <a href="#">CHOOSE PLAN</a>
+                    </div>
+                    <div class="price__inner-block">
+                        <div class="price__inner-block-top">
+                            <p>Starter</p>
+                        </div>
+                        
+                        <h1>50</h1>
+                        <p>2 Logo Design</p>
+                        <p>2 Website Design</p>
+                        <p>1 Domain Free</p>
+                        <p>6 Month License</p>
+                        <h4>1 GB Storage</h4>
+                        <a href="#">CHOOSE PLAN</a>
+                    </div>
+                    <div class="price__inner-block">
+                        <div class="price__inner-block-top">
+                            <p>Professional</p>
+                        </div>
+                        
+                        <h1>70</h1>
+                        <p>3 Logo Design</p>
+                        <p>3 Website Design</p>
+                        <p>2 Domain Free</p>
+                        <p>12 Month License</p>
+                        <h4>2 GB Storage</h4>
+                        <a href="#">CHOOSE PLAN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact__inner">
+                <div class="contact__inner-left">
+                    <p>Get in Touch</p>
+                    <div class="contact__inner-left-inputs">
+                        <input type="text" placeholder="YOUR NAME">
+                        <input type="text" placeholder="VALID EMAIL">
+                        <input type="text" placeholder="YOUR MESSAGE">
+                    </div>
+                    <button>SEND MESSAGE</button>
+                </div>
+
+                <div class="contact__inner-right">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__inner-logo"><img src="css/img/shape.svg" alt="" srcset=""></div>
+                <div class="footer__inner-menu">
+                    <ul class="footer__inner-menu-list">
+                        <li class="footer__inner-menu-list-item"><a href="#" class="footer__inner-menu-list-item-link">FACEBOOK</a></li>
+                        <li class="footer__inner-menu-list-item"><a href="#" class="footer__inner-menu-list-item-link">TWITTER</a></li>
+                        <li class="footer__inner-menu-list-item"><a href="#" class="footer__inner-menu-list-item-link">GOOGLE+</a></li>
+                        <li class="footer__inner-menu-list-item"><a href="#" class="footer__inner-menu-list-item-link">BEHANCE</a></li>
+                        <li class="footer__inner-menu-list-item"><a href="#" class="footer__inner-menu-list-item-link">DRIBBLE</a></li>
+                        <li class="footer__inner-menu-list-item"><a href="#" class="footer__inner-menu-list-item-link">INSTAGRAM</a></li>
+                    </ul>
+                </div>
+                <div class="footer__inner-info">
+                    <p>Mese Selimovica 52, Banja Luka - BiH</p>
+                    <p>(00387) 65 252 222</p>
+                    <p>info@mail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom">
+        <div class="container">
+            <div class="bottom__inner">
+                <p>@2021 Oxygen Theme</p>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick/slick.min.js"></script>                
+    <script src="js/script6.js"></script>
     <script src="js/progressbar.js"></script>
     <script src="js/script1.js"></script>
     <script src="js/script2.js"></script>
     <script src="js/script3.js"></script>
     <script src="js/script4.js"></script>
     <script src="js/script5.js"></script>
+    <script src="js/script7.js"></script>
 </body>
 </html>
