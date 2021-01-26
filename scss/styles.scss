@@ -9,36 +9,49 @@ body {
 
 .white {
     background: white;
+    transition:0.7s;
 }
 
 .whiteorigin {
-    background:white;
+    color:white;
+    transition:0.7s;
+}
+.blackorigin {
+    color:#2c2e2d;
+    transition:0.7s;
 }
 .black {
     background: #373A39;
+    transition:0.7s;
 }
 
 .blacker {
     background:#373A39;
+    transition:0.7s;
 }
 
 .blackest {
     background:#2c2e2d;
+    transition:0.7s;
 }
 
 .blacktext {
     color:#373A39;
+    transition:0.7s;
 }
 .whitetext {
     color:white;
+    transition:0.7s;
 }
 
 .grey {
     background:#F6F8FA;
+    transition:0.7s;
 }
 
 .blacktwo {
     background: #2c2e2d;
+    transition:0.7s;
 }
 
 .container {
@@ -346,14 +359,14 @@ body {
                 font-weight: bold;
                 font-size: 60px;
                 line-height: 75px;
-                display: flex;
-                align-items: flex-end;
                 letter-spacing: -1.65px;
                 // color: #242121;
                 position:relative;
-                @extend .yellowstripe;
-                width:7%;
                 margin-bottom: 15px;
+                &::before {
+                    @extend .yellowstripe;
+                    width:7%;
+                }
             }
 
             &-right {
@@ -372,7 +385,7 @@ body {
                         align-items: flex-end;
                         text-align: right;
                         letter-spacing: 2px;
-                        color: #333333;
+                        // color: #333333;
                         cursor:pointer;
                         position:relative;
 
@@ -952,3 +965,176 @@ body {
     }
 }
 
+@media (max-width: 1340px) {
+    .container {
+        width:1100px;
+    }
+
+    .header__container {
+        width:1100px;
+    }
+
+    .price {
+        &__inner {
+            &-block {
+                width:300px;
+
+            }
+        }
+    }
+}
+
+@media (max-width:1160px) {
+    .container {
+        width:900px;
+    }
+
+    .header__container {
+        width:900px;
+    }
+
+    .about {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .about__inner {
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        &-left {
+            text-align:center;
+            &-text {
+                margin-bottom: 20px;
+                &::before {
+                    width:100%;
+                }
+            }
+        }
+        &-right {
+            text-align:center;
+        }
+    }
+
+    .expertise {
+        padding-top: 90px;
+        padding-bottom: 80px;
+        &__inner {
+            justify-content: center;
+            align-items: center;
+            &-top {
+                display: flex;
+                align-items:center;
+                &-text {
+                    &::before {
+                        width:100%;
+                    }
+                }
+            }
+            &-mid {
+                display: flex;
+                flex-direction:column;
+                margin-top: -40px;
+                &-text {
+                    display: none;
+                }
+            }
+            &-bottom {
+                flex-direction:column;
+                text-align: center;
+                margin-top: -60px;
+                padding-bottom: 30px;
+                &-block {
+                    margin-bottom: 20px
+                }
+            }
+        }
+    }
+
+    .vision {
+        &__inner {
+            position:relative;
+
+            &-left {
+                background-repeat: no-repeat;
+                opacity:0.3;
+                background-position: center;
+                    width:100%;
+            }
+
+            &-right {
+                position:absolute;
+                left:30%;
+                text-align:center;
+
+                &-top {
+                    &::before {
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        &__inner {
+            border: 4px solid #FCBB08;
+            padding:10px;
+            &-top {
+
+                &-right {
+                    display: none;
+                }
+
+                &-left {
+                    display: flex;
+                    justify-content: center;  
+                    &::before {
+                        width:100%;
+                    }
+                }
+            }
+
+            &-bottom {
+                padding-top: 20px;
+                &-grid {
+                    height:300px;
+                }
+                &-unseen {
+                    &-grid {
+                        height:150px;
+                        div {
+                            height:150px;
+                        }
+                    }
+                }
+
+                &-more {
+                    
+                }
+            }
+        }
+    }
+
+    .team {
+        &__inner {
+            h2 {
+                text-align: center;
+                &::before {
+                    width:100%;
+                }
+            }
+            &-faces {
+                display: flex;
+                justify-content: center;
+                &-block {
+                    img {
+                        height:300px;
+
+                    }
+                }
+            }
+        }
+    }
+}

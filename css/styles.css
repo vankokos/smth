@@ -12,7 +12,7 @@
   font-weight: bold;
 }
 
-.yellowstripe, .about__inner-left-text::before, .expertise__inner-top-text::before, .vision__inner-right-top::before, .portfolio__inner-top-left, .team__inner h2::before, .price__inner-text:before, .contact__inner-left p::before, .footer__inner-logo::before {
+.yellowstripe, .about__inner-left-text::before, .expertise__inner-top-text::before, .vision__inner-right-top::before, .portfolio__inner-top-left::before, .team__inner h2::before, .price__inner-text:before, .contact__inner-left p::before, .footer__inner-logo::before {
   content: "";
   background-color: #FCBB08;
   width: 100px;
@@ -34,38 +34,52 @@ body {
 
 .white {
   background: white;
+  transition: 0.7s;
 }
 
 .whiteorigin {
-  background: white;
+  color: white;
+  transition: 0.7s;
+}
+
+.blackorigin {
+  color: #2c2e2d;
+  transition: 0.7s;
 }
 
 .black {
   background: #373A39;
+  transition: 0.7s;
 }
 
 .blacker {
   background: #373A39;
+  transition: 0.7s;
 }
 
 .blackest {
   background: #2c2e2d;
+  transition: 0.7s;
 }
 
 .blacktext {
   color: #373A39;
+  transition: 0.7s;
 }
 
 .whitetext {
   color: white;
+  transition: 0.7s;
 }
 
 .grey {
   background: #F6F8FA;
+  transition: 0.7s;
 }
 
 .blacktwo {
   background: #2c2e2d;
+  transition: 0.7s;
 }
 
 .container {
@@ -347,12 +361,13 @@ body {
   font-weight: bold;
   font-size: 60px;
   line-height: 75px;
-  display: flex;
-  align-items: flex-end;
   letter-spacing: -1.65px;
   position: relative;
-  width: 7%;
   margin-bottom: 15px;
+}
+
+.portfolio__inner-top-left::before {
+  width: 7%;
 }
 
 .portfolio__inner-top-right-menu {
@@ -371,7 +386,6 @@ body {
   align-items: flex-end;
   text-align: right;
   letter-spacing: 2px;
-  color: #333333;
   cursor: pointer;
   position: relative;
 }
@@ -938,5 +952,139 @@ body {
   line-height: 16px;
   text-align: center;
   color: #CCCCCC;
+}
+
+@media (max-width: 1340px) {
+  .container {
+    width: 1100px;
+  }
+  .header__container {
+    width: 1100px;
+  }
+  .price__inner-block {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .container {
+    width: 900px;
+  }
+  .header__container {
+    width: 900px;
+  }
+  .about {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .about__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__inner-left {
+    text-align: center;
+  }
+  .about__inner-left-text {
+    margin-bottom: 20px;
+  }
+  .about__inner-left-text::before {
+    width: 100%;
+  }
+  .about__inner-right {
+    text-align: center;
+  }
+  .expertise {
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
+  .expertise__inner {
+    justify-content: center;
+    align-items: center;
+  }
+  .expertise__inner-top {
+    display: flex;
+    align-items: center;
+  }
+  .expertise__inner-top-text::before {
+    width: 100%;
+  }
+  .expertise__inner-mid {
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+  }
+  .expertise__inner-mid-text {
+    display: none;
+  }
+  .expertise__inner-bottom {
+    flex-direction: column;
+    text-align: center;
+    margin-top: -60px;
+    padding-bottom: 30px;
+  }
+  .expertise__inner-bottom-block {
+    margin-bottom: 20px;
+  }
+  .vision__inner {
+    position: relative;
+  }
+  .vision__inner-left {
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    background-position: center;
+    width: 100%;
+  }
+  .vision__inner-right {
+    position: absolute;
+    left: 30%;
+    text-align: center;
+  }
+  .vision__inner-right-top::before {
+    width: 100%;
+  }
+  .portfolio {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .portfolio__inner {
+    border: 4px solid #FCBB08;
+    padding: 10px;
+  }
+  .portfolio__inner-top-right {
+    display: none;
+  }
+  .portfolio__inner-top-left {
+    display: flex;
+    justify-content: center;
+  }
+  .portfolio__inner-top-left::before {
+    width: 100%;
+  }
+  .portfolio__inner-bottom {
+    padding-top: 20px;
+  }
+  .portfolio__inner-bottom-grid {
+    height: 300px;
+  }
+  .portfolio__inner-bottom-unseen-grid {
+    height: 150px;
+  }
+  .portfolio__inner-bottom-unseen-grid div {
+    height: 150px;
+  }
+  .team__inner h2 {
+    text-align: center;
+  }
+  .team__inner h2::before {
+    width: 100%;
+  }
+  .team__inner-faces {
+    display: flex;
+    justify-content: center;
+  }
+  .team__inner-faces-block img {
+    height: 300px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
