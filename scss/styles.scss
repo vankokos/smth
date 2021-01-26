@@ -558,27 +558,9 @@ body {
 
         &-video {
             &-inner {
-                background-image: url(img/video1.svg);
                 // background-size: 100%;
-                width: 100%;
-                height:324px;
-                position:relative;
-                z-index:1000;
-                cursor:pointer;
-                &::after {
-                    content: "";
-                    position:absolute;
-                    background-image: url(img/arrow.svg);
-                    height:65px;
-                    width:55px;
-                    right:48%;
-                    top:40%;
-    
-                    &:hover {
-                        transform: scale(1.7);
-    
-                    }
-                }
+                width:700px;
+                height:300px;
             }
         }
 
